@@ -7,7 +7,7 @@ import { CookieService } from 'ngx-cookie-service';
   providedIn: 'root'
 })
 export class ApiService {
-  baseUrl = "http://127.0.0.1:8000/";
+  baseUrl = "https://movierater-angular-django.herokuapp.com/";
   baseMovieUrl = `${this.baseUrl}api/movies/`;
   token = this.cookieService.get('mr-token');
   headers = new HttpHeaders({
